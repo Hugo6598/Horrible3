@@ -111,5 +111,21 @@ html {
   100% { transform: translate(-5px,-5px); }
 }
 
+.button-return {
+  position: fixed;      /* reste toujours visible */
+  bottom: 20px;         /* à 20px du bas */
+  left: 50%;            /* centré horizontalement */
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 30px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 0 30px #ff1493;
+  z-index: 1000;        /* toujours au-dessus */
+}
+
 
 
