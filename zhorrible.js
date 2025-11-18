@@ -30,4 +30,12 @@
     document.body.appendChild(d);
     setTimeout(() => d.remove(), 500);
   });
+
+const arrows = document.querySelectorAll('.arrow');
+arrows.forEach((arrow, i) => {
+  const speed = Math.random() * 3 + 1; // vitesse aléatoire
+  arrow.style.animation = `spin ${speed}s linear infinite`;
+});
+
 </script>
+
