@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>🌸 Mon Love pour Leo 🌸</title>
+<style>
+body {
+  background: linear-gradient(45deg, #ffc0cb, #ffb6c1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 2px 2px #ff69b4;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+img {
+  width: 70%;
+  max-width: 600px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #ff69b4;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  color: #ff69b4;
+  animation: drift linear infinite;
+}
+
+.button-return {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 20px 40px;
+  font-size: 30px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 0 30px #ff1493;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes drift {
+  0% { transform: translate(0,0) rotate(0deg); opacity:1; }
+  100% { transform: translate(100px,-500px) rotate(360deg); opacity:0; }
+}
+</style>
+</head>
+<body>
+
+<h1>💖 Mon Love pour Leo 💖</h1>
+
+<img src="https://media.giphy.com/media/1BdIPiud0zD2c/giphy.gif" alt="Jardin rose">
+
+<!-- Petits coeurs flottants -->
+<script>
+for(let i=0;i<30;i++){
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.style.left = Math.random()*100 + 'vw';
+  heart.style.top = Math.random()*100 + 'vh';
+  heart.style.fontSize = (20 + Math.random()*40) + 'px';
+  heart.innerHTML = '💖';
+  heart.style.animationDuration = (5 + Math.random()*5) + 's';
+  document.body.appendChild(heart);
+}
+</script>
+
+<a href="index.html" class="button-return">🔙 Retour à l’enfer principal 🔙</a>
+
+</body>
+</html>
