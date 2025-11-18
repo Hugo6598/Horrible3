@@ -34,3 +34,50 @@ html {
   50% { filter: invert(1); }
   100% { filter: invert(0); }
 }
+
+.choose-page {
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  animation: rainbowText 3s linear infinite;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.option {
+  background: rgba(255,0,0,0.3);
+  padding: 20px;
+  border: 5px dashed yellow;
+  border-radius: 20px;
+  position: relative;
+  animation: pulse 2s infinite, rainbowText 4s linear infinite;
+}
+
+.option a {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 50px;
+  color: red;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
