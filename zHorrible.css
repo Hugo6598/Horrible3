@@ -80,4 +80,27 @@ html {
   to { transform: rotate(360deg); }
 }
 
+.big-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 5px dashed yellow;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: pulse 2s infinite, rainbowText 4s infinite;
+  text-align: center;
+}
+
+.big-button:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 60px #ff1493;
+}
+
+
 
